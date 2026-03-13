@@ -37,7 +37,6 @@ public class BaseTest {
 	// second set of 10 test will have their own thread driver object - 10 driver
 	
 	
-	
 //	public WebDriver driver;
 	public static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 	public LandingPage landingpage;
@@ -77,7 +76,6 @@ public class BaseTest {
 			break;
 		}
 		case "edge":{
-			// edge related object will be created
 			
 			EdgeOptions options = new EdgeOptions();
 
