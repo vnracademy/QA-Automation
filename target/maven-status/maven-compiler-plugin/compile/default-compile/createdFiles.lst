@@ -1,0 +1,8 @@
+vnracademy/pageobject/ProductDetailsPage.class
+vnracademy/reporters/ExtentReportManager.class
+vnracademy/pageobject/LoginPage.class
+vnracademy/pageobject/MyAccountPage.class
+vnracademy/pageobject/CheckoutPage.class
+vnracademy/pageobject/LandingPage.class
+vnracademy/abstractcomponents/AbstractComponent.class
+vnracademy/pageobject/ProductDisplayPage.class

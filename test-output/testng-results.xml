@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="1" total="7" passed="3" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-11T10:09:31 IST" name="Suite" finished-at="2026-03-11T10:10:02 IST" duration-ms="30948">
+    <groups>
+      <group name="products">
+        <method signature="AddProductsToCartTest.addProductsToCart(java.util.HashMap)[pri:0, instance:vnracademy.opencart.AddProductsToCartTest@50378a4]" name="addProductsToCart" class="vnracademy.opencart.AddProductsToCartTest"/>
+      </group> <!-- products -->
+    </groups>
+    <test started-at="2026-03-11T10:09:31 IST" name="Login To OpenCart" finished-at="2026-03-11T10:09:36 IST" duration-ms="4746">
+      <class name="vnracademy.opencart.LoginToApplicationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:vnracademy.opencart.LoginToApplicationTest@2bdd8394]" started-at="2026-03-11T10:09:31 IST" name="launchApplication" finished-at="2026-03-11T10:09:33 IST" duration-ms="1612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginToOpenCart()[pri:0, instance:vnracademy.opencart.LoginToApplicationTest@2bdd8394]" started-at="2026-03-11T10:09:33 IST" name="loginToOpenCart" finished-at="2026-03-11T10:09:34 IST" duration-ms="733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToOpenCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:vnracademy.opencart.LoginToApplicationTest@2bdd8394]" started-at="2026-03-11T10:09:34 IST" name="tearDown" finished-at="2026-03-11T10:09:34 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- vnracademy.opencart.LoginToApplicationTest -->
+      <class name="vnracademy.opencart.ErrorValidationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:vnracademy.opencart.ErrorValidationTest@5f9edf14]" started-at="2026-03-11T10:09:34 IST" name="launchApplication" finished-at="2026-03-11T10:09:36 IST" duration-ms="1673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginToApplicationWithInvalidCredentials()[pri:0, instance:vnracademy.opencart.ErrorValidationTest@5f9edf14]" started-at="2026-03-11T10:09:36 IST" name="loginToApplicationWithInvalidCredentials" finished-at="2026-03-11T10:09:36 IST" duration-ms="406" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Was successfull with invalid credentials. But expected message: Warning: No match for E-Mail Address and/or Password. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Was successfull with invalid credentials. But expected message: Warning: No match for E-Mail Address and/or Password. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at vnracademy.opencart.ErrorValidationTest.loginToApplicationWithInvalidCredentials(ErrorValidationTest.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplicationWithInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:vnracademy.opencart.ErrorValidationTest@5f9edf14]" started-at="2026-03-11T10:09:36 IST" name="tearDown" finished-at="2026-03-11T10:09:36 IST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- vnracademy.opencart.ErrorValidationTest -->
+    </test> <!-- Login To OpenCart -->
+    <test started-at="2026-03-11T10:09:31 IST" name="Add Products To Cart" finished-at="2026-03-11T10:10:02 IST" duration-ms="30948">
+      <class name="vnracademy.opencart.AddProductsToCartTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:vnracademy.opencart.AddProductsToCartTest@50378a4]" started-at="2026-03-11T10:09:31 IST" name="launchApplication" finished-at="2026-03-11T10:09:34 IST" duration-ms="2522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="addProductsToCart(java.util.HashMap)[pri:0, instance:vnracademy.opencart.AddProductsToCartTest@50378a4]" started-at="2026-03-11T10:09:34 IST" name="addProductsToCart" data-provider="getData" finished-at="2026-03-11T10:09:35 IST" duration-ms="1020" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Test@123, product=iPhone, quantity=4, email=Test1@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductsToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:vnracademy.opencart.AddProductsToCartTest@50378a4]" started-at="2026-03-11T10:09:35 IST" name="tearDown" finished-at="2026-03-11T10:09:35 IST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:vnracademy.opencart.AddProductsToCartTest@50378a4]" started-at="2026-03-11T10:09:35 IST" name="launchApplication" finished-at="2026-03-11T10:09:37 IST" duration-ms="1591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="addProductsToCart(java.util.HashMap)[pri:0, instance:vnracademy.opencart.AddProductsToCartTest@50378a4]" started-at="2026-03-11T10:09:37 IST" name="addProductsToCart" data-provider="getData" finished-at="2026-03-11T10:09:37 IST" duration-ms="840" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Test@123, product=MacBook, quantity=10, email=venkat_test@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductsToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:vnracademy.opencart.AddProductsToCartTest@50378a4]" started-at="2026-03-11T10:09:37 IST" name="tearDown" finished-at="2026-03-11T10:09:38 IST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:vnracademy.opencart.AddProductsToCartTest@50378a4]" started-at="2026-03-11T10:09:38 IST" name="launchApplication" finished-at="2026-03-11T10:09:39 IST" duration-ms="1562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="checkoutTest()[pri:0, instance:vnracademy.opencart.AddProductsToCartTest@50378a4]" started-at="2026-03-11T10:09:39 IST" name="checkoutTest" finished-at="2026-03-11T10:09:50 IST" depends-on-methods="vnracademy.opencart.AddProductsToCartTest.addProductsToCart" duration-ms="10679" status="SKIP">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=145.0.7632.162)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.2', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8fbf334d95671770e37b89c909350ea0, sendKeysToElement {value=[Ljava.lang.CharSequence;@7ea43647, id=f.2807994DA1DBCA280B530F529AFF039E.d.837F900D651F217754997678021B8E3A.e.72}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.162, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: /var/folders/6j/zwpt8t613h7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54401}, goog:processID: 15717, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54401/devtoo..., se:cdpVersion: 145.0.7632.162, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8fbf334d95671770e37b89c909350ea0)] -> id: input-payment-firstname]
+Session ID: 8fbf334d95671770e37b89c909350ea0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=145.0.7632.162)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.2', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8fbf334d95671770e37b89c909350ea0, sendKeysToElement {value=[Ljava.lang.CharSequence;@7ea43647, id=f.2807994DA1DBCA280B530F529AFF039E.d.837F900D651F217754997678021B8E3A.e.72}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.162, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: /var/folders/6j/zwpt8t613h7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54401}, goog:processID: 15717, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54401/devtoo..., se:cdpVersion: 145.0.7632.162, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8fbf334d95671770e37b89c909350ea0)] -> id: input-payment-firstname]
+Session ID: 8fbf334d95671770e37b89c909350ea0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+at vnracademy.pageobject.CheckoutPage.fillInBillingDetails(CheckoutPage.java:61)
+at vnracademy.opencart.AddProductsToCartTest.checkoutTest(AddProductsToCartTest.java:54)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:vnracademy.opencart.AddProductsToCartTest@50378a4]" started-at="2026-03-11T10:09:50 IST" name="tearDown" finished-at="2026-03-11T10:09:50 IST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:vnracademy.opencart.AddProductsToCartTest@50378a4]" started-at="2026-03-11T10:09:50 IST" name="launchApplication" finished-at="2026-03-11T10:09:51 IST" duration-ms="1474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="checkoutTest()[pri:0, instance:vnracademy.opencart.AddProductsToCartTest@50378a4]" started-at="2026-03-11T10:09:51 IST" name="checkoutTest" finished-at="2026-03-11T10:10:02 IST" depends-on-methods="vnracademy.opencart.AddProductsToCartTest.addProductsToCart" duration-ms="10672" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=145.0.7632.162)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.2', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b7b511cd4f3044bd05e9e501fe2659ac, sendKeysToElement {value=[Ljava.lang.CharSequence;@6a3f1fb3, id=f.3D9B21CFC151F2BAB941303FBBAD0404.d.F52D57530C5BF913F5DB79FDA3C28E2E.e.69}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.162, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: /var/folders/6j/zwpt8t613h7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54428}, goog:processID: 15754, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54428/devtoo..., se:cdpVersion: 145.0.7632.162, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (b7b511cd4f3044bd05e9e501fe2659ac)] -> id: input-payment-firstname]
+Session ID: b7b511cd4f3044bd05e9e501fe2659ac]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=145.0.7632.162)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.2', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b7b511cd4f3044bd05e9e501fe2659ac, sendKeysToElement {value=[Ljava.lang.CharSequence;@6a3f1fb3, id=f.3D9B21CFC151F2BAB941303FBBAD0404.d.F52D57530C5BF913F5DB79FDA3C28E2E.e.69}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.162, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: /var/folders/6j/zwpt8t613h7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54428}, goog:processID: 15754, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54428/devtoo..., se:cdpVersion: 145.0.7632.162, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (b7b511cd4f3044bd05e9e501fe2659ac)] -> id: input-payment-firstname]
+Session ID: b7b511cd4f3044bd05e9e501fe2659ac
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+at vnracademy.pageobject.CheckoutPage.fillInBillingDetails(CheckoutPage.java:61)
+at vnracademy.opencart.AddProductsToCartTest.checkoutTest(AddProductsToCartTest.java:54)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:vnracademy.opencart.AddProductsToCartTest@50378a4]" started-at="2026-03-11T10:10:02 IST" name="tearDown" finished-at="2026-03-11T10:10:02 IST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- vnracademy.opencart.AddProductsToCartTest -->
+    </test> <!-- Add Products To Cart -->
+  </suite> <!-- Suite -->
+</testng-results>

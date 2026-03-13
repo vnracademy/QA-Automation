@@ -1,0 +1,21 @@
+[
+	
+	{
+		"email" :"Test1@gmail.com",
+		"password" : "Test@123",
+		"product" : "iPhone", 
+		"quantity" : "4"
+	},
+	{
+		"email" :"venkat_test@gmail.com",
+		"password" : "Test@123",
+		"product" : "MacBook", 
+		"quantity" : "10"
+	}
+	
+	
+	
+	
+	
+	
+]

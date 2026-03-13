@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+
+<listener class-name="vnracademy.testcomponents.Listeners"></listener>
+
+</listeners>
+
+  <test thread-count="5" name="Add Products To Cart">
+    <classes>
+      	<class name="vnracademy.opencart.AddProductsToCartTest"/>
+    </classes>
+  </test>
+    
+  <test thread-count="5" name="Login To OpenCart">
+    <classes>
+    	<class name="vnracademy.opencart.LoginToApplicationTest"/>
+      	<class name="vnracademy.opencart.ErrorValidationTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
