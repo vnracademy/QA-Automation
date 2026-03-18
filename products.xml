@@ -18,14 +18,14 @@
 
   <test name="Add Products To Cart">
     <classes>
-      	<class name="VNRACADEMY.opencart.AddProductsToCartTest"/>
+      	<class name="vnracademy.opencart.AddProductsToCartTest"/>
     </classes>
   </test>
     
   <test name="Login To OpenCart">
     <classes>
-    	<class name="VNRACADEMY.opencart.LoginToApplicationTest"/>
-      	<class name="VNRACADEMY.opencart.ErrorValidationTest"/>
+    	<class name="vnracademy.opencart.LoginToApplicationTest"/>
+      	<class name="vnracademy.opencart.ErrorValidationTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
