@@ -19,6 +19,9 @@ public class ExtentReportManager {
 		extentSparker.config().setDocumentTitle("Test Automation Results");
 		extentSparker.config().setReportName("VNR ACADEMY");
 		
+		// 🔥 ADD THIS LINE (CRITICAL)
+		extentSparker.config().setOfflineMode(true);
+		
 		ExtentReports extent = new ExtentReports();
 		extent.attachReporter(extentSparker);
 		return extent;
