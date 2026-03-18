@@ -74,6 +74,29 @@ public class BaseTest {
 //			driver = new ChromeDriver(options);
 			driver.set(new ChromeDriver(options));
 			break;
+		}case "chromeheadless": {
+			
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("headless");
+
+			Map<String, Object> prefs = new HashMap<>();
+
+			// Disable password manager
+			prefs.put("credentials_enable_service", false);
+			prefs.put("profile.password_manager_enabled", false);
+
+			// Disable password breach detection
+			prefs.put("profile.password_manager_leak_detection", false);
+
+			// Optional: disable Safe Browsing password protection
+			prefs.put("safebrowsing.enabled", false);
+
+			// Always good for automation
+//			options.addArguments("--incognito");
+			options.setExperimentalOption("prefs", prefs);
+//			driver = new ChromeDriver(options);
+			driver.set(new ChromeDriver(options));
+			break;
 		}
 		case "edge":{
 			

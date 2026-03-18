@@ -3,6 +3,13 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
+      <class name="vnracademy.opencart.ErrorValidationTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="loginToApplicationWithInvalidCredentials"/>
+        </methods>
+      </class> <!-- vnracademy.opencart.ErrorValidationTest -->
       <class name="vnracademy.opencart.AddProductsToCartTest">
         <methods>
           <include name="launchApplication"/>

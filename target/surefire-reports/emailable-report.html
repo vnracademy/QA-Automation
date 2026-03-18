@@ -9,67 +9,14 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Add Products To Cart</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">31,513</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Login To OpenCart</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">4,960</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num attn">1</th><th class="num attn">2</th><th class="num">36,473</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Add Products To Cart</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">5,247</td><td>products</td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Login To OpenCart</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td>products</td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">5,247</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Add Products To Cart &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">vnracademy.opencart.AddProductsToCartTest</td><td><a href="#m0">checkoutTest</a></td><td rowspan="1">1773290518486</td><td rowspan="1">10647</td></tr><tr><th colspan="4">Add Products To Cart &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">vnracademy.opencart.AddProductsToCartTest</td><td><a href="#m1">checkoutTest</a></td><td rowspan="1">1773290505223</td><td rowspan="1">10672</td></tr><tr><th colspan="4">Add Products To Cart &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">vnracademy.opencart.AddProductsToCartTest</td><td><a href="#m2">addProductsToCart</a></td><td rowspan="2">1773290499966</td><td rowspan="2">854</td></tr><tr class="passedeven"><td><a href="#m3">addProductsToCart</a></td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Login To OpenCart &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">vnracademy.opencart.ErrorValidationTest</td><td><a href="#m4">loginToApplicationWithInvalidCredentials</a></td><td rowspan="1">1773290533911</td><td rowspan="1">350</td></tr><tr><th colspan="4">Login To OpenCart &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">vnracademy.opencart.LoginToApplicationTest</td><td><a href="#m5">loginToOpenCart</a></td><td rowspan="1">1773290531617</td><td rowspan="1">330</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Add Products To Cart &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">vnracademy.opencart.AddProductsToCartTest</td><td><a href="#m0">addProductsToCart</a></td><td rowspan="2">1773800315102</td><td rowspan="2">770</td></tr><tr class="passedeven"><td><a href="#m1">addProductsToCart</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4" class="invisible"/></tr></tbody>
 </table>
-<h2>Add Products To Cart</h2><h3 id="m0">vnracademy.opencart.AddProductsToCartTest#checkoutTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=145.0.7632.162)
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.2&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [940ddb9f138c99f18a3a18cc8d3763f7, sendKeysToElement {value=[Ljava.lang.CharSequence;@b835727, id=f.B4F9219F1E3E9024E78925652AA3E43F.d.B8E97DA0EDDAC9CE0E12DCDA3290654A.e.69}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.162, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: /var/folders/6j/zwpt8t613h7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49369}, goog:processID: 10268, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49369/devtoo..., se:cdpVersion: 145.0.7632.162, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (940ddb9f138c99f18a3a18cc8d3763f7)] -&gt; id: input-payment-firstname]
-Session ID: 940ddb9f138c99f18a3a18cc8d3763f7
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
-	at vnracademy.pageobject.CheckoutPage.fillInBillingDetails(CheckoutPage.java:61)
-	at vnracademy.opencart.AddProductsToCartTest.checkoutTest(AddProductsToCartTest.java:54)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">vnracademy.opencart.AddProductsToCartTest#checkoutTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=145.0.7632.162)
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.2&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0b6ba2befa79d2e2e0deb9d47665d37c, sendKeysToElement {value=[Ljava.lang.CharSequence;@1640c151, id=f.58ED453DEE8FECDCD331C69B26D319B0.d.1DBA4C789A15F7F974FC3BB5BA5CF4ED.e.68}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.162, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: /var/folders/6j/zwpt8t613h7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49336}, goog:processID: 10201, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49336/devtoo..., se:cdpVersion: 145.0.7632.162, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (0b6ba2befa79d2e2e0deb9d47665d37c)] -&gt; id: input-payment-firstname]
-Session ID: 0b6ba2befa79d2e2e0deb9d47665d37c
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
-	at vnracademy.pageobject.CheckoutPage.fillInBillingDetails(CheckoutPage.java:61)
-	at vnracademy.opencart.AddProductsToCartTest.checkoutTest(AddProductsToCartTest.java:54)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">vnracademy.opencart.AddProductsToCartTest#addProductsToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Test@123, product=iPhone, quantity=4, email=Test1@gmail.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">vnracademy.opencart.AddProductsToCartTest#addProductsToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Test@123, product=MacBook, quantity=10, email=venkat_test@gmail.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Login To OpenCart</h2><h3 id="m4">vnracademy.opencart.ErrorValidationTest#loginToApplicationWithInvalidCredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login Was successfull with invalid credentials. But expected message: Warning: No match for E-Mail Address and/or Password. expected [true] but found [false]
-	at vnracademy.opencart.ErrorValidationTest.loginToApplicationWithInvalidCredentials(ErrorValidationTest.java:21)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">vnracademy.opencart.LoginToApplicationTest#loginToOpenCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-</body>
+<h2>Add Products To Cart</h2><h3 id="m0">vnracademy.opencart.AddProductsToCartTest#addProductsToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Test@123, product=MacBook, quantity=10, email=venkat_test@gmail.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">vnracademy.opencart.AddProductsToCartTest#addProductsToCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Test@123, product=iPhone, quantity=4, email=Test1@gmail.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login To OpenCart</h2></body>
 </html>
