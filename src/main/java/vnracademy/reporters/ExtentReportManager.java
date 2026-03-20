@@ -2,6 +2,7 @@ package vnracademy.reporters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentReportManager {
 	
@@ -18,12 +19,14 @@ public class ExtentReportManager {
 		ExtentSparkReporter extentSparker = new ExtentSparkReporter(reportFilePath);
 		extentSparker.config().setDocumentTitle("Test Automation Results");
 		extentSparker.config().setReportName("VNR ACADEMY");
+		// Optional (just UI settings)
+		extentSparker.config().setTheme(Theme.STANDARD);
 		
 		// IMPORTANT LINE 👇
 		extentSparker.config().setCss("body { font-family: Arial; }"); // optional
 		// 🔥 ADD THIS LINE (CRITICAL)
 		extentSparker.config().setOfflineMode(true);
-		
+
 		ExtentReports extent = new ExtentReports();
 		extent.attachReporter(extentSparker);
 		return extent;
