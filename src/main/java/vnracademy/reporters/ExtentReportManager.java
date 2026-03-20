@@ -19,6 +19,8 @@ public class ExtentReportManager {
 		extentSparker.config().setDocumentTitle("Test Automation Results");
 		extentSparker.config().setReportName("VNR ACADEMY");
 		
+		// IMPORTANT LINE 👇
+		extentSparker.config().setCss("body { font-family: Arial; }"); // optional
 		// 🔥 ADD THIS LINE (CRITICAL)
 		extentSparker.config().setOfflineMode(true);
 		
